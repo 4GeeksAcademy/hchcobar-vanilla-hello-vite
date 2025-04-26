@@ -56,6 +56,7 @@ window.onload = function() {
       },
       {
         "id": 3,
+        "image_url": 'https://images.pexels.com/photos/2587112/pexels-photo-2587112.jpeg?auto=compress&cs=tinysrgb&w=600',
         "name": "Clementine Bauch",
         "username": "Samantha",
         "email": "Nathan@yesenia.net",
@@ -79,6 +80,7 @@ window.onload = function() {
       },
       {
         "id": 4,
+        "image_url": 'https://images.pexels.com/photos/4926674/pexels-photo-4926674.jpeg?auto=compress&cs=tinysrgb&w=400',
         "name": "Patricia Lebsack",
         "username": "Karianne",
         "email": "Julianne.OConner@kory.org",
@@ -101,7 +103,8 @@ window.onload = function() {
         }
       },
       {
-        "id": 5,
+        "id": 5,        
+        "image_url": 'https://images.pexels.com/photos/25756/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
         "name": "Chelsey Dietrich",
         "username": "Kamren",
         "email": "Lucio_Hettinger@annie.ca",
@@ -125,6 +128,7 @@ window.onload = function() {
       },
       {
         "id": 6,
+        "image_url": 'https://images.pexels.com/photos/2169434/pexels-photo-2169434.jpeg?auto=compress&cs=tinysrgb&w=600',
         "name": "Mrs. Dennis Schulist",
         "username": "Leopoldo_Corkery",
         "email": "Karley_Dach@jasper.info",
