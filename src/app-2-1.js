@@ -48,7 +48,15 @@ window.onload = function() {
     let tagContent = ''
     students.map((item, index) => {
       console.log('hola');
-      tagContent += `<li class="list-group-item">${item.name}</li>`
+      tagContent += `
+        <li class="list-group-item d-flex justify-content-between">
+          ${item.name}
+          <span>
+            <i class="fas fa-edit text-primary"></i>
+            <i class="fas fa-trash-alt text-danger"></i>
+          </span>
+        </li>
+        `
     })
     console.log(tagContent)
 
