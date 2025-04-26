@@ -4,21 +4,12 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  // Write your code here
-  // console.log('Hola Spain 108');
-  // console.log("Hello Rigo from the console!");
+    // Write your code here
 
-  // let, var const
-  let name = 'Aia';  // string
-  let lastname = "Gómez"  // string
-  let saludo = "I'am"
-  let number = 10;   // integer
-  let saldo = 255.50 // float
-  let isActive = true  // boolean
+    // Array
+    let names = ['Giovanny', 'Raúl', 'Arturo', 'Fernando', 'Federico']
 
-  // Array
-
-  // Objetos
+    // Objetos
     let person1 = {
       name: 'Alberto',
       lastname: 'Fernández',
@@ -44,9 +35,26 @@ window.onload = function() {
     // Array de objetos (json)
     let students = [person1, person2, person3]
 
-    console.log(students)
-    console.log(students[0].lastname)
-    console.log(students[2].sports[1])
+    // console.log(students)
 
+    /* Mapamos un array */
+    // names.map((element, i) => {console.log(i, element)})
+    // array.map(función flecha)
+    // students.map((item, i) => {console.log(i, item.name, item.age, item.sports[0])})
+    // students.map((item, i) => {console.log(item.name + ' tiene' + item.age + ' años')})
+    // students.map((item, i) => {console.log(`${item.name} tiene ${item.age} años`)})
+
+    /* Crear el contenido a renderizar */
+    let tagContent = ''
+    students.map((item, index) => {
+      console.log('hola');
+      tagContent += `<li class="list-group-item">${item.name}</li>`
+    })
+    console.log(tagContent)
+
+    /* Capturar un elemeto HTML */
+    const tag = document.querySelector('ul')
+    tag.innerHTML = tagContent;
+    console.log(tag)
   
 };
