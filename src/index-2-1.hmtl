@@ -19,7 +19,11 @@
     <div class="container-fluid text-center">
       <h1 class="mt-5 text-primary">Renderizando JS</h1>
       <h2 class="text-success">Time to Code</h2>
-      <div class="container" id="list-card"></div>
+      <ul id="list-students" class="list-group">
+        <li class="list-group-item">Hola 1</li>
+        <li class="list-group-item">Hola 2</li>
+        <li class="list-group-item">Hola 3</li>
+      </ul>
       
 
 
