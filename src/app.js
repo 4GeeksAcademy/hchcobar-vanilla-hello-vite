@@ -74,14 +74,16 @@ window.onload = function() {
   /* Mapear el array todos */
   todos.map((todo) => {
     textHTML += `
-      <li class="list-group-item d-flex justify-content-between">
-        <span>${todo.title}</span>
-        <span>${todo.name}</span>
+      <li key=${todo.id} class="list-group-item d-flex justify-content-between">
+        <span>${todo.id} - ${todo.title}</span>
+        <span class="text-primary"><strong>${todo.name.toUpperCase()}</strong></span>
         <span>
           ${todo.completed ? 
-            `<i class="fas fa-check-square fa-lg text-success"></i>`
+            `<i class="fas fa-check-square fa-lg text-success">
+            </i>`
           : 
-            `<i class="fas fa-window-close fa-lg text-danger"></i>`
+            `<i class="fas fa-window-close fa-lg text-danger">
+            </i>`
           }
         </span>
       </li>
@@ -90,9 +92,20 @@ window.onload = function() {
 
   /* Capturar la ul desde el HTML */
   let tag = document.querySelector('#todos')
-  
   /* Voy a renderizar las li a la ul */
   tag.innerHTML = textHTML
 
+
+  /* Ejemplo del password del login */
+  let isView = false;
+  let inputTag = document.querySelector('#floatingPassword');
+  let iconTag = document.querySelector('#eyes-icon');
+
+  inputTag.type = isView ? 'text' : 'password';
+  iconTag.innerHTML = isView ? `
+    <i class="fas fa-eye-slash text-danger"></i>
+  ` : `
+    <i class="fas fa-eye text-success"></i>
+`
 
 };
